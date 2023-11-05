@@ -2,7 +2,7 @@
 # BE_testing_round
 
 ## Installation
-Assuming you’ve already installed Node.js, git, Mysql server
+Assuming you’ve already installed Node.js, git, Mysql server.
 Next, clone this project with following command
 ```js
 git clone https://github.com/phoangtuan97/BE_testing_round.git'
