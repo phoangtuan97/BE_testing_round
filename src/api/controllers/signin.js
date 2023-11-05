@@ -59,7 +59,6 @@ const signIn = async (req, res, next) => {
         // To clear old refreshToken in cookies
         res.clearCookie('refreshToken');
         const oldRefreshToken = await getTokenBy({ refreshToken: cookies.refreshToken });
-        console.log('oldRefreshToken', oldRefreshToken);
         if (oldRefreshToken.length > 0) { // used to sign-up
           // remove old refreshToken
           await deleteToken({ id: oldRefreshToken[0].id });
@@ -71,7 +70,7 @@ const signIn = async (req, res, next) => {
       });
       // To set cookies
       res.cookie('refreshToken', newRefreshToken, {
-        maxAge: 60 * 1000,
+        maxAge: 2592000 * 1000,
         httpOnly: true,
         secure: true,
       });
