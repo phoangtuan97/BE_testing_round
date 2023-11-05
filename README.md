@@ -17,9 +17,9 @@ Create a '.env' file at the same level as package.json.
 For instance,  '.env' file looks like
 ```js
 PORT= your server's port
-SECRET_ACCESS_TOKEN = your secret key
-SECRET_REFRESH_TOKEN = your secret key
-DATABASE_NAME=example
+SECRET_ACCESS_TOKEN= your secret key
+SECRET_REFRESH_TOKEN= your secret key
+DATABASE_NAME= example
 HOST= your host
 PORT_DB_MYSQL= your running port of mysql server 
 USER= your username
