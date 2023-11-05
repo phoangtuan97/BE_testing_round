@@ -5,7 +5,7 @@
 Assuming you’ve already installed Node.js, git, Mysql server.
 Next, clone this project with following command
 ```js
-git clone https://github.com/phoangtuan97/BE_testing_round.git'
+git clone https://github.com/phoangtuan97/BE_testing_round.git
 ```
 
 Then, install some neccessary packages for the project
