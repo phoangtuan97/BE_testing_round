@@ -16,7 +16,7 @@ npm install
 Create a '.env' file at the same level as package.json.
 For instance,  '.env' file looks like
 ```js
-PORT= your server's port
+PORT= your server port
 SECRET_ACCESS_TOKEN= your secret key
 SECRET_REFRESH_TOKEN= your secret key
 DATABASE_NAME= example
