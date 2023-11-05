@@ -36,6 +36,6 @@ npm start
 node
 require('crypto').randomBytes(64).toString('hex')
 ```
-- DATABASE_NAME in '.env' file is must matched with DB name created in mysql server
-- After create a database successfully, just import file db.sql into newly created DB. 
+- DATABASE_NAME field in '.env' file is must matched with DB name created in mysql server
+- After creating a database successfully, just import file db.sql into newly created DB. 
 
