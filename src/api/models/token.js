@@ -9,5 +9,5 @@ const deleteToken = ({ id }) => db('tokens').where({ id }).delete({ id });
 const deleteAllTokenByUserId = ({ userId }) => db('tokens').where({ userId }).del();
 
 module.exports = {
-  getTokenBy, createToken, deleteToken, deleteAllTokenByUserId,
+    getTokenBy, createToken, deleteToken, deleteAllTokenByUserId,
 };
