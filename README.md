@@ -8,12 +8,12 @@ Next, clone this project with following command
 git clone https://github.com/phoangtuan97/BE_testing_round.git'
 ```
 
-Then, install some neccesary packages for the project
+Then, install some neccessary packages for the project
 ```js
 npm install
 ```
 
-Create a '.env' file at the same level as package.json
+Create a '.env' file at the same level as package.json.
 For instance,  '.env' file looks like
 ```js
 PORT= your server's port
