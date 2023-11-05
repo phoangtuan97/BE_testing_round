@@ -8,26 +8,25 @@ const { signAccessToken, signRefreshToken } = require('../services/jwt');
 
 /*
 pseudocode
-validate the inputs
-if any error then do
-  return validation error
-else
-  get user by email
-  if user exist and password is matched then do
-    sign accessToken and newRefreshToken
-  else return error
-  endif
-  if {req.cookies.refreshToken as oldRefreshToken} exist then do
-    clear refreshToken in cookies
-    find token by value of oldRefreshToken
-      if token exist then
-        delete token
-      endif
-  endif
-  save newRefreshToken to db
-  set cookies.refreshToken = newRefreshToken
-  return response(object)
-endif
+1   validate the inputs
+2   if any error then do
+3       return validation error
+4   else
+5       get user by email
+6       if user exist and password is matched then do
+7           sign accessToken and newRefreshToken
+8       else return error
+9       if {req.cookies.refreshToken as oldRefreshToken} exist then do
+10          clear refreshToken in cookies
+11          find token by value of oldRefreshToken
+12          if token exist then
+13              delete token
+14          endif
+15      endif
+16      save newRefreshToken to db
+17      set cookies.refreshToken = newRefreshToken
+18      return response(object)
+19  endif
 */
 
 const signIn = async (req, res, next) => {

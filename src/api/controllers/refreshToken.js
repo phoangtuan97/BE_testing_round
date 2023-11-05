@@ -37,11 +37,12 @@ const handleRefreshToken = async (req, res, next) => {
         const foundToken = await getTokenBy({ refreshToken });
         // To detect reuse token
         if (foundToken.length === 0) {
+            // eslint-disable-next-line consistent-return
             jwt.verify(refreshToken, process.env.SECRET_REFRESH_TOKEN, async (err, payload) => {
                 if (err) return next(createError.Forbidden());
                 await deleteAllTokenByUserId({ userId: payload.userId });
-                return next(createError.Forbidden());
             });
+            return next(createError.Forbidden());
         }
         // To check whether refresh token is still valid, then rotate token
         // add new token and delete old token(invalidate refreshToken)
