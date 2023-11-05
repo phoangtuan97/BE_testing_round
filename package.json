@@ -1,0 +1,40 @@
+{
+  "name": "be_testing_round",
+  "version": "1.0.0",
+  "description": "Design APIS for entrance evaluation",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon  --trace-warnings server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoangtuan97/BE_testing_round.git"
+  },
+  "author": "phoangtuan97",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoangtuan97/BE_testing_round/issues"
+  },
+  "homepage": "https://github.com/phoangtuan97/BE_testing_round#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "http-errors": "^2.0.0",
+    "joi": "^17.11.0",
+    "knex": "^3.0.1",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "nodemon": "^3.0.1"
+  }
+}
